@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery with Lightbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
+    <link rel="stylesheet" href="lightbox.css" />
+  </head>
+  <body>
+    <div class="motorcycles">
+      <h2 class="motorcycles__title">Motorcycles</h2>
+
+      <!-- Motorcycles Grid -->
+      <div class="motorcycles__grid">
+        <div class="image">
+          <img src="img/ktm-390duke.jpg" alt="KTM 390 Duke" data-id="0">
+          <i class="fas fa-search"></i>
+          <h3 class="image__title">KTM 390 Duke</h3>
+        </div>
+
+        <div class="image">
+          <img src="img/kawasaki-ninja400.jpg" alt="Kawasaki Ninja 400" data-id="1">
+          <i class="fas fa-search"></i>
+          <h3 class="image__title">Kawasaki Ninja 400</h3>
+        </div>
+
+        <div class="image">
+          <img src="img/honda-cb500f.jpg" alt="Honda CB500F" data-id="2">
+          <i class="fas fa-search"></i>
+          <h3 class="image__title">Honda CB500F</h3>
+        </div>
+        
+        <div class="image">
+          <img src="img/honda-cbr500.jpg" alt="Honda CBR500R" data-id="3">
+          <i class="fas fa-search"></i>
+          <h3 class="image__title">Honda CBR500R</h3>
+        </div>
+
+        <div class="image">
+          <img src="img/kawasaki-z500.jpg" alt="Kawasaki Z500" data-id="4">
+          <i class="fas fa-search"></i>
+          <h3 class="image__title">Kawasaki Z500</h3>
+        </div>
+
+        <div class="image">
+          <img src="img/kawasaki-ninja500.jpg" alt="Kawasaki Ninja 500" data-id="5">
+          <i class="fas fa-search"></i>
+          <h3 class="image__title">Kawasaki Ninja 500</h3>
+        </div>
+      </div>
+
+      <!-- Motorcycles Modal -->
+      <div class="motorcycles__modal">
+        <div class="lightbox">
+          <span class="close-btn">
+            <i class="fas fa-times"></i>
+          </span>
+
+          <span class="previous-btn">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+
+          <img src="" alt="loading image" />
+
+          <div class="title"></div>
+
+          <div class="number"></div>
+          
+          <span class="next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="lightbox.js"></script>
+  </body>
+</html>
